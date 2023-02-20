@@ -114,7 +114,8 @@ Bacula Configuration on Single machine
 		Pool {
   		 Name = File
   		 Pool Type = Backup
-  	       Recycle = yes                       # Bacula can automatically recycle Volumes
+		 Label Format = Local-
+  	         Recycle = yes                       # Bacula can automatically recycle Volumes
   		 AutoPrune = yes                     # Prune expired volumes
   		 Volume Retention = 30 days         # one year
  		 Maximum Volume Bytes = 10G          # Limit Volume size to something reasonable
